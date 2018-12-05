@@ -605,3 +605,67 @@ $bar-spacing: 15px
 .display-none
   display: none
 
+header.cabinet
+  position: relative
+  padding-top: 0
+  top: 0
+  z-index: 11
+  .but
+    flex-grow: 1
+    text-align: right
+    padding-right: 20px
+  a
+    color: #FFFFFF
+    font-size: 18px
+  .hamburger-menu
+    display: block
+header.new-header.new-cabinet
+  .logo a svg
+    @media (max-width: 370px)
+      width: 100px
+.cabinet-profile-exit
+  position: fixed
+  top: 0
+  right: 0
+  z-index: 9
+  width: 100%
+  transition: top .4s
+  @media (max-width: 767px)
+    display: none
+  .container
+    position: relative
+    padding: 11px 135px
+    @media (max-width: 991px)
+      padding: 0 5px
+    .cabinet-profile-exit__menu
+      background-color: #5D2D81
+      width: 183px
+      float: right
+      border-radius: 0 0 10px 10px
+      ul
+        li
+          padding: 0 10px
+          a
+            display: inline-block
+            color: #9E81B3
+            font-size: 16px
+            line-height: 19px
+            padding: 7px 5px
+            width: 100%
+            border-bottom: 1px solid #6D428D
+            transition: color .4s
+            &:hover
+              color: #ffffff
+            &:hover svg
+              path
+                fill: #ffffff
+            svg
+              vertical-align: -5px
+              margin-right: 5px
+              path
+                transition: fill .4s
+                fill: #9E81B3
+.cabinet-profile-exit-show
+  top: 75px!important
+  @media (max-width: 991px)
+    top: 86px!important
