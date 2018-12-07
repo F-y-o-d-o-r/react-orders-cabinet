@@ -3,7 +3,13 @@
 
 body
   font-family: RobotoCondensed, sans-serif
-
+// .App
+//   display: flex
+//   flex-direction: column
+//   //justify-content: space-between
+//   min-height: 100vh
+main
+  min-height: 500px
 *
   box-sizing: border-box
 
@@ -243,3 +249,379 @@ input[type='number']
     height: 0
     display: table
     clear: both
+
+//----------------------------------
+// DEV
+//----------------------------------
+.chromeperfectpixel-initial-block iframe,
+#chromeperfectpixel-supported-by
+  display: none !important
+#__bs_notify__
+  display: none !important
+  opacity: 0 !important
+//*
+//	transition: all .3s
+
+body
+  position: relative
+
+.home, .stages
+  background-image: linear-gradient(to top, #461c69 0%, #2c0b47 100%)
+  box-shadow: 3px 4px 32px rgba(0, 0, 0, 0.75)
+
+.services, .advantage, .stages, .reviews-list, .partners, .events, .job, .about
+  h2
+    color: #351054
+    font-size: 30px
+    font-weight: 700
+    padding: 30px 0
+    @media (max-width: 1368px)
+      //font-size: 38px
+      //padding: 50px 0
+    @media (max-width: 1100px)
+      //font-size: 36px
+      //padding: 46px 0
+    @media (max-width: 860px)
+      font-size: 28px
+      //padding: 34px 0
+.advantage
+  h2
+    padding: 30px 0 20px 0
+
+.short-text
+  padding: 0 300px 210px
+  text-align: center
+  @media (max-width: 1368px)
+    padding: 0 300px 150px
+  @media (max-width: 1199px)
+    padding: 0 100px 200px
+  @media (max-width: 860px)
+    padding: 0 20px 160px
+  p
+    font-size: 16px
+    padding-top: 25px
+
+.social
+  ul
+    padding: 23px 0 170px
+    @media (max-width: 860px)
+      padding-bottom: 80px
+  li
+    padding-right: 40px
+    &:last-child
+      padding-right: 0
+    @media (max-width: 860px)
+      padding-right: 14px
+      &:last-child
+        padding-right: 0
+    @media (max-width: 420px)
+      padding-right: 18px
+      &:last-child
+        padding-right: 0
+  a
+    font-size: 50px
+    color: $color
+    display: inline-block
+    width: 75px
+    height: 75px
+    @media (max-width: 1368px)
+      width: 60px
+      height: 60px
+
+.price-b
+  font-size: 22px
+  font-weight: 700
+  background-color: #12c77f
+  color: #ffffff
+  margin-right: 0
+  border-radius: 15px
+  padding: 25px 19px
+  transition: 0.3s
+  max-width: 412px
+  &:hover
+    transition: .3s
+    color: #351054
+  @media (max-width: 1368px)
+    font-size: 18px
+    max-width: 320px
+    padding: 16px 19px
+  @media (max-width: 420px)
+    max-width: 260px
+    padding: 14px 19px
+
+input, textarea
+  &:focus, &:active, &:visited
+    outline: none
+  &::-webkit-input-placeholder
+    opacity: 1
+    transition: opacity 0.3s ease
+  &::-moz-placeholder
+    opacity: 1
+    transition: opacity 0.3s ease
+  &:-moz-placeholder
+    opacity: 1
+    transition: opacity 0.3s ease
+  &:-ms-input-placeholder
+    opacity: 1
+    transition: opacity 0.3s ease
+  &:focus::-webkit-input-placeholder
+    opacity: 0
+    transition: opacity 0.3s ease
+  &:focus::-moz-placeholder
+    opacity: 0
+    transition: opacity 0.3s ease
+  &:focus:-moz-placeholder
+    opacity: 0
+    transition: opacity 0.3s ease
+  &:focus:-ms-input-placeholder
+    opacity: 0
+    transition: opacity 0.3s ease
+
+
+//.main-index-page
+  header
+    padding-top: 56px
+
+.slider-cabinet
+  background-color: #c9b366
+  padding: 62px 0 0
+  //@media (max-width: 1380px)
+  //	padding-top: 66px
+  .item-slider
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 50px 20px 60px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    height: 275px
+    //@media (max-width: 840px)
+    //	height: 240px
+    @media (max-width: 640px)
+      padding: 30px 20px 40px
+    .icon
+      padding-right: 130px
+      z-index: 1
+      @media (max-width: 1400px)
+        padding-right: 100px
+      @media (max-width: 1200px)
+        padding-right: 70px
+
+      @media (max-width: 860px)
+        padding-right: 40px
+      @media (max-width: 640px)
+        padding-right: 20px
+        //padding-bottom: 20px
+      img
+        height: 139px
+        width: 139px
+        @media (max-width: 1024px)
+          height: 110px
+          width: 110px
+        @media (max-width: 640px)
+          height: 90px
+          width: 90px
+    .content
+      z-index: 1
+      max-width: 600px
+      @media (max-width: 1024px)
+        width: 60%
+    h2
+      font-size: 48px
+      margin: 0
+      text-align: left
+      @media (max-width: 1400px)
+        font-size: 42px
+      @media (max-width: 1200px)
+        font-size: 36px
+      @media (max-width: 1024px)
+        font-size: 32px
+      @media (max-width: 580px)
+        font-size: 28px
+    .text
+      font-size: 30px
+      line-height: 1em
+      @media (max-width: 1400px)
+        font-size: 26px
+      @media (max-width: 1200px)
+        font-size: 24px
+      @media (max-width: 1024px)
+        font-size: 22px
+      @media (max-width: 580px)
+        font-size: 18px
+      p
+        margin: 0
+  .owl-dots
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 1
+    .owl-dot
+      margin-bottom: 5px
+      span
+        width: 15px
+        height: 15px
+        background-color: #515151
+    .active
+      span
+        background-color: #ffffff
+.slider-cabinet.new-cabinet
+  //padding: 86px 0 0
+  padding: 0
+  margin: 86px 0 0
+  @media (max-width: 640px)
+    margin: 54px 0 0
+  .item-slider
+    height: 220px
+
+nav.cabinet
+  @media (max-width: 767px)
+    display: none
+  ul
+    display: flex
+    justify-content: center
+    @media (max-width: 767px)
+      justify-content: space-between
+    @media (max-width: 575px)
+      flex-direction: column
+  li
+    border-radius: 0 0 10px 10px
+    border-left: 1px solid #D7D7D7
+    border-right: 1px solid #D7D7D7
+    border-bottom: 1px solid #D7D7D7
+    transition: 0.25s
+    margin: 0 8px
+    @media (max-width: 575px)
+      border-radius: 10px
+      margin-top: 10px
+      border: 1px solid #D7D7D7
+  a
+    color: #8B8B8B
+    font-size: 16px
+    padding: 10px 55px
+    display: block
+    @media (max-width: 767px)
+      padding: 10px 20px
+    @media (max-width: 575px)
+      text-align: center
+  .active, li:hover
+    background-color: #40297B
+    transition: 0.25s
+    a
+      color: #FFFFFF
+  .orders
+    a.message
+      span
+        position: relative
+        &:after
+          content: ''
+          height: 5px
+          width: 5px
+          background-color: #FC3232
+          border-radius: 50%
+          position: absolute
+          right: -5px
+          top: 0
+  
+
+.verticalCarouselHeader
+  text-align: center
+a.vc_goUp, a.vc_goDown
+  display: inline-block
+  font-size: 46px
+  z-index: 100
+  cursor: pointer
+.vc_container
+  margin-bottom: -26px
+  z-index: 10
+
+.block_tabs
+  .nav-tabs
+    text-align: center
+    .item-tab
+      transition: all 0.35s
+      padding: 5px
+      cursor: pointer
+      font-weight: 700
+      border-radius: 15px 15px 0 0
+      line-height: 50px
+      border: 3px solid #411962
+      background-color: #ffffff
+      color: #351054
+      border-bottom: none
+      width: 420px
+      text-align: center
+      margin: 0 30px
+      &.active
+        //border-color: #000
+        transition: all 0.35s
+        background-color: #411962
+        color: #ffffff
+
+  .tab-wrap
+    .tab-content
+
+      display: none
+      &.active
+
+        display: block
+
+
+.circle-list
+  display: flex
+  justify-content: space-around
+  justify-content: space-around
+  max-width: 1360px
+  margin: 0 auto 35px
+  @media (max-width: 1360px)
+    //margin-bottom: 50px
+  @media (max-width: 1100px)
+    margin-bottom: 40px
+  @media (max-width: 860px)
+    margin-bottom: 40px
+  li
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 16px
+      left: 30px
+      height: 5px
+      width: 100vw
+      background-color: #ffffff
+      z-index: 1
+    &::after
+      content: ''
+      position: absolute
+      top: 16px
+      right: 30px
+      height: 5px
+      width: 100vw
+      background-color: #ffffff
+      z-index: 1
+    @media (max-width: 1368px)
+      &:before
+        top: 11px
+      &:after
+        top: 11px
+    .circle
+      width: 38px
+      height: 38px
+      border: 5px solid #ffffff
+      background-color: #3b155b
+      border-radius: 50%
+      //margin-bottom: 50px
+      position: relative
+      z-index: 2
+      &.active
+        background-color: #ffffff
+        border-color: #ffffff
+      @media (max-width: 1368px)
+        width: 28px
+        height: 28px

@@ -1,0 +1,228 @@
+footer
+  .footer2
+    fill: #ffffff
+    path
+      stroke:none
+      fill-rule:nonzero
+      fill:rgb(100%,100%,100%)
+      //fill-opacity:1
+  .footer1
+    fill: #ffffff
+    path
+      stroke:none
+      fill-rule:nonzero
+      fill:rgb(100%,100%,100%)
+      //fill-opacity:1
+  .footer3
+    fill: #ffffff
+    path
+      stroke:none
+      fill-rule:nonzero
+      fill:rgb(100%,100%,100%)
+      //fill-opacity:1
+.footer
+  background-color: #272727
+  .container
+    padding: 35px 0px 20px
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-around
+    @media (max-width: 1368px)
+      padding: 26px 0px 16px
+
+  h4
+    font-size: 16px
+
+  h3
+    text-align: center
+    padding-bottom: 38px
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 18px
+    @media (max-width: 1368px)
+      padding-bottom: 16px
+  a
+    color: #ffffff
+    font-size: 16px
+  li
+    padding-bottom: 4px
+    @media (max-width: 1368px)
+      padding-bottom: 0px
+      font-size: 16px
+  .social
+    //width: 22%
+    text-align: center
+    ul
+      padding-bottom: 0
+    @media (max-width: 1368px)
+      li
+        padding-right: 20px
+    @media (max-width: 1220px)
+      display: none
+    a
+      width: 46px
+
+  .services-list, .about-list, .cooperation-list
+    //width: 20%
+    text-align: center
+    @media (max-width: 860px)
+      width: 45%
+      padding-bottom: 40px
+    @media (max-width: 520px)
+      width: 80%
+      text-align: center
+      h3
+        text-align: center
+      a
+        margin: auto
+  .cooperation-list
+    @media (max-width: 860px)
+      width: 30%
+    @media (max-width: 520px)
+      width: 80%
+  .social-groups
+    //width: 12%
+    //margin-left: 40px
+    @media (max-width: 1120px)
+      //width: 20%
+    @media (max-width: 860px)
+      margin-right: 40px
+      //width: 35%
+      //a
+        width: 186px
+
+    @media (max-width: 520px)
+      //width: 40%
+      margin-left: 40px
+      a
+        margin: auto
+
+    ul
+      //width: 145px
+    h3
+      text-transform: none
+      font-size: 16px
+      text-align: left
+      padding-bottom: 13px
+    li
+      padding-bottom: 13px
+      @media (max-width: 1368px)
+        //padding-bottom: 16px
+    a
+      //width: 185px
+      display: block
+      border-radius: 15px
+      border: 2px solid #ffffff
+      padding-left: 52px
+      padding-top: 2px
+      position: relative
+      height: 27px
+      &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: 42px
+        width: 2px
+        height: 25px
+        background-color: #ffffff
+    .vk
+      &:after
+        content: "\f189"
+        font-family: FontAwesome
+        position: absolute
+        top: 1px
+        left: 11px
+        color: #ffffff
+    .facebook
+      &:after
+        content: "\f09a"
+        font-family: FontAwesome
+        position: absolute
+        top: 2px
+        left: 16px
+        color: #ffffff
+    .telegram
+      &:after
+        content: "\f1d8"
+        font-family: FontAwesome
+        position: absolute
+        top: 2px
+        left: 13px
+        color: #ffffff
+        font-size: 14px
+
+
+/* ============================================================================
+ * new footer
+ * ============================================================================ */
+
+footer.new-footer
+  background-color: #291954
+  padding-bottom: 108px
+  padding-block-start: 9px
+  font-family: "RobotoCondensed"
+  @media (max-width: 767px)
+    padding-bottom: 60px
+  .about-list
+    @media (max-width: 767px)
+      width: 100%!important
+      margin-top: 30px
+  .container_first_order
+    padding: 35px 152px 20px
+    justify-content: space-between
+    @media (max-width: 767px)
+      flex-direction: column
+      padding: 35px 20px 20px
+  & .footer_corp
+    & p
+      color: #fff
+      margin: 0
+      text-align: center
+      color: #fff
+      font-size: 16px
+      line-height: 19px
+      font-weight: 400
+  & .about-list
+    & li
+      margin-bottom: 16px
+      @media (max-width: 767px)
+        margin-bottom: 6px
+      &:last-child
+        margin: 0
+      & a
+        font-family: "RobotoCondensed"
+        font-weight: 400
+        line-height: 19px
+        font-size: 16px
+        text-align: center
+        color: #FFFFFF
+  & .footer_social
+    h4
+      font-weight: 400
+      line-height: normal
+      font-size: 16px
+      text-align: center
+      color: #FFFFFF
+    .list-item
+      padding-top: 23px
+      text-align: center
+      & li
+        display: inline-block
+        margin-right: 10px
+        &:last-child
+          margin: 0
+        & a
+          width: auto !important
+// @media screen and (min-device-width: 521px) and (max-device-width: 854px)
+//   .footer_first_order
+//     .container
+//       padding:  35px 20px 20px
+//       justify-content: center
+// @media screen and (min-device-width: 320px) and (max-device-width: 520px)
+//   .footer_first_order
+//     .container
+//       padding:  35px 0px 20px
+//       justify-content: center
+//     .about-list 
+//       margin-top: 25px
