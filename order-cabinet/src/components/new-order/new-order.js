@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+/*eslint-disable */
 import { BrowserRouter as Route, Link } from 'react-router-dom';
+/*eslint-enable */
 import './new-order.sass';
 
 export default class NewOrder extends Component {

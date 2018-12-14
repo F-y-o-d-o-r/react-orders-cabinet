@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+/*eslint-disable */
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+/*eslint-enable */
 import './profile.sass';
 
 export default class Profile extends Component {

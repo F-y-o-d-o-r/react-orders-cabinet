@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+/*eslint-disable */
 import { BrowserRouter as Route, Link } from 'react-router-dom';
+/*eslint-enable */
 import './orders.sass';
 
 export default class Orders extends Component {
