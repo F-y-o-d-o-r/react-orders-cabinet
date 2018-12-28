@@ -10,11 +10,11 @@ export default class Profile extends Component {
       <div>
         <nav className="cabinet">
           <ul>
-            <li>
+            {/* <li>
               <Link to="/new-order" className="message">
                 Сделать заказ
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/" className="message">
                 Мои заказы

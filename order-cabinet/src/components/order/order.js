@@ -7,7 +7,7 @@ export default class Order extends Component {
   };
 
   componentDidMount = () => {
-    const { match, location, history } = this.props;
+    const { match } = this.props;
     fetch('https://jsonplaceholder.typicode.com/posts').then((response) => response.json()).then((json) =>
       this.setState({
         js: json[match.params.id]
@@ -21,17 +21,19 @@ export default class Order extends Component {
     });
     console.log('del');
   };
-
+  componentWillMount() {
+    console.log(this.props);
+  }
   render() {
     return (
       <div>
         <nav className="cabinet">
           <ul>
-            <li>
+            {/* <li>
               <Link to="/new-order" className="message">
                 Сделать заказ
               </Link>
-            </li>
+            </li> */}
             <li className="active">
               <Link to="/" className="message">
                 Мои заказы
@@ -55,7 +57,7 @@ export default class Order extends Component {
                 <div className="desc__order-firstcolumn">
                   <div>
                     <span>Статус:</span>
-                    <span>В обработке</span>
+                    <span>В обработке{}</span>
                   </div>
                   <div>
                     <span>ВУЗ:</span>

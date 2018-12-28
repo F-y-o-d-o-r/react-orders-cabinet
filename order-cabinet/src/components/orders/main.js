@@ -31,7 +31,8 @@ export default class MainOrders extends Component {
       <li className="order-waiting" key={js.id}>
         <Link
           to={{
-            pathname: '/order/' + js.id
+            pathname: '/order/' + js.id,
+            status: 'order-waiting'
           }}
         >
           <div className="desc">
@@ -101,7 +102,8 @@ export default class MainOrders extends Component {
       <li className="order-in-work" key={js.id}>
         <Link
           to={{
-            pathname: '/order/' + js.id
+            pathname: '/order/' + js.id,
+            status: 'order-in-work'
           }}
         >
           <div className="desc">
@@ -171,7 +173,8 @@ export default class MainOrders extends Component {
       <li className="order-waiting" key={js.id}>
         <Link
           to={{
-            pathname: '/order/' + js.id
+            pathname: '/order/' + js.id,
+            status: 'order-waiting'
           }}
         >
           <div className="desc">
@@ -241,7 +244,8 @@ export default class MainOrders extends Component {
       <li className="order-finished" key={js.id}>
         <Link
           to={{
-            pathname: '/order/' + js.id
+            pathname: '/order/' + js.id,
+            status: 'order-finished'
           }}
         >
           <div className="desc">

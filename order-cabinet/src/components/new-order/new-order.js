@@ -10,11 +10,11 @@ export default class NewOrder extends Component {
       <div>
         <nav className="cabinet">
           <ul>
-            <li className="active">
+            {/* <li className="active">
               <Link to="/new-order" className="message">
                 Сделать заказ
               </Link>
-            </li>
+            </li> */}
             <li className="orders">
               <Link to="/" className="message">
                 Мои заказы
