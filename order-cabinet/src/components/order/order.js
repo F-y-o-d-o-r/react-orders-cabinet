@@ -15,6 +15,13 @@ export default class Order extends Component {
     );
   };
 
+  del = (id) => {
+    fetch('https://jsonplaceholder.typicode.com/posts/' + this.props.match.params.id, {
+      method: 'DELETE'
+    });
+    console.log('del');
+  };
+
   render() {
     return (
       <div>
@@ -113,6 +120,13 @@ export default class Order extends Component {
                 <div className="date-of-order-name">Дата поступления заказа:</div>
                 <div className="date-of-order">13.11.18 22:00</div>
               </div>
+              <button
+                className="btn-primary"
+                style={{ backgroundColor: 'red', color: '#fff', marginTop: 10, borderRadius: 10 }}
+                onClick={this.del}
+              >
+                Удалить
+              </button>
             </div>
             <a className="pay small-pay-button" href="!#">
               Скачать файл <span>(6)</span>
