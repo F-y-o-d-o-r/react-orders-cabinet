@@ -6,7 +6,6 @@ import Carousel from './components/carousel/carousel';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Orders from './components/orders/orders';
 import Order from './components/order/order';
-import Child from './components/order/order';
 import NewOrder from './components/new-order/new-order';
 import Profile from './components/profile/profile';
 
@@ -24,8 +23,7 @@ class App extends Component {
                   <Route path="/" exact component={Orders} />
                   <Route path="/new-order" exact component={NewOrder} />
                   <Route path="/profile" exact component={Profile} />
-                  <Route path="/order" exact component={Order} />
-                  <Route exact path="/order/:id" component={Child} />
+                  <Route exact path="/order/:id" component={Order} />
                 </div>
               </Router>
             </div>

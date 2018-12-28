@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Route, Link } from 'react-router-dom';
-
+// import { BrowserRouter as Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export default class MainOrders extends Component {
   state = {
     js: [],
@@ -29,7 +29,11 @@ export default class MainOrders extends Component {
     var id = this.state.orderVariant;
     const orderAll = this.state.js.map((js) => (
       <li className="order-waiting" key={js.id}>
-        <a href="order.html">
+        <Link
+          to={{
+            pathname: '/order/' + js.id
+          }}
+        >
           <div className="desc">
             <div className="desc__order-status">
               <div>
@@ -89,13 +93,17 @@ export default class MainOrders extends Component {
             </div>
             <button className="pay order-color">Изменить</button>
           </div>
-        </a>
+        </Link>
       </li>
     ));
     var inWork = this.state.js.slice(5, 20);
     const orderInWork = inWork.map((js) => (
       <li className="order-in-work" key={js.id}>
-        <a href="order.html">
+        <Link
+          to={{
+            pathname: '/order/' + js.id
+          }}
+        >
           <div className="desc">
             <div className="desc__order-status">
               <div>
@@ -155,13 +163,17 @@ export default class MainOrders extends Component {
             </div>
             <button className="pay order-color">Изменить</button>
           </div>
-        </a>
+        </Link>
       </li>
     ));
     var inWait = this.state.js.slice(20, 33);
     const orderInWait = inWait.map((js) => (
       <li className="order-waiting" key={js.id}>
-        <a href="order.html">
+        <Link
+          to={{
+            pathname: '/order/' + js.id
+          }}
+        >
           <div className="desc">
             <div className="desc__order-status">
               <div>
@@ -221,13 +233,17 @@ export default class MainOrders extends Component {
             </div>
             <button className="pay order-color">Изменить</button>
           </div>
-        </a>
+        </Link>
       </li>
     ));
     var inFinished = this.state.js.slice(34, 80);
     const orderInFinish = inFinished.map((js) => (
       <li className="order-finished" key={js.id}>
-        <a href="order.html">
+        <Link
+          to={{
+            pathname: '/order/' + js.id
+          }}
+        >
           <div className="desc">
             <div className="desc__order-status">
               <div>
@@ -287,7 +303,7 @@ export default class MainOrders extends Component {
             </div>
             <button className="pay order-color">Скачать файл</button>
           </div>
-        </a>
+        </Link>
       </li>
     ));
     return (

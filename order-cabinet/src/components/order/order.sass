@@ -1,0 +1,243 @@
+@import ../../sass/_mixins
+
+.orders-order-wrapper
+  .container1
+    padding-left: 109px
+    padding-right: 109px
+    @media (max-width: 991px)
+      padding-left: 20px
+      padding-right: 20px
+  .back
+    margin: 50px auto 10px
+    display: block
+    color: #8B8B8B
+    padding-left: 20px
+    font-size: 16px
+    @media (max-width: 767px)
+      margin: 20px auto 10px
+    @media (max-width: 575px)
+      padding-left: 15px
+      padding-right: 15px
+  .order
+    display: flex
+    flex-direction: row
+    color: #351054
+    border-radius: 10px
+    border: 1px solid #B6B6B6
+    justify-content: space-between
+    margin: auto
+    margin-bottom: 50px
+    font-size: 17px
+    @media (max-width: 1368px)
+      flex-direction: column
+    @media (max-width: 575px)
+      margin-bottom: 20px
+    .desc-wrapper
+      .desc-header,
+      .desc-footer
+        color: #8B8B8B
+        padding-left: 21px
+        padding-right: 21px
+        padding-top: 21px
+        font-size: 16px
+        @media (max-width: 575px)
+          padding-left: 15px
+          padding-right: 15px
+          padding-top: 15px
+        span
+          display: inline-block
+          color: #000000
+          font-weight: bold
+      .desc-footer
+        padding-top: 0
+        padding-bottom: 21px
+        position: relative
+        span
+          font-weight: normal
+          // max-height: 80px
+          overflow: hidden
+          transition: .4s max-height
+
+          @media (max-width: 575px)
+            margin-bottom: 20px
+        @media (max-width: 1368px)
+          padding-bottom: 15px
+        @media (max-width: 575px)
+          padding-bottom: 0
+        .show-more-wrapper
+          position: absolute
+          right: 21px
+          bottom: 21px
+          background-color: #fff
+          transition: .4s bottom
+          @media (max-width: 1369px)
+            bottom: 15px
+          @media (max-width: 575px)
+            bottom: 0
+            right: 15px
+          span:first-of-type
+            opacity: 1
+            transition: 1.4s opacity
+          .show-more
+            margin-left: 5px
+            color: #8B8B8B
+            cursor: pointer
+      .full-height
+        span
+          max-height: 1000px!important
+          transition: 1.4s max-height
+        .show-more-wrapper
+          bottom: 0px
+          transition: .4s bottom
+          @media (max-width: 576px)
+            bottom: -20px
+          span:first-of-type
+            opacity: 0
+            transition: .4s opacity
+      .desc
+        color: #000000
+        align-items: flex-start
+        font-size: 16px
+        flex-direction: row
+        @media (max-width: 1368px)
+          justify-content: space-between
+        @media (max-width: 575px)
+          flex-direction: column
+          padding-bottom: 0
+        &__order-firstcolumn,
+        &__order-secondcolumn
+          @media (max-width: 1368px)
+            margin-right: 0
+          div
+            display: flex
+            margin-bottom: 21px
+            @media (max-width: 575px)
+              margin-bottom: 15px
+              //font-size: 13px
+          span:first-of-type
+            display: inline-block
+            color: #8b8b8b
+          span:nth-of-type(2)
+            font-weight: bold
+        &__order-firstcolumn
+          margin-right: 40px
+          width: 266px
+          @media (max-width: 1368px)
+            width: 50%
+            margin-right: 20px
+          @media (max-width: 575px)
+            width: 100%
+            margin-right: 0
+          span:first-of-type
+            min-width: 77px
+            @media (max-width: 575px)
+              min-width: 103px
+        &__order-secondcolumn
+          flex-grow: 1
+          width: 376px
+          @media (max-width: 1368px)
+            width: 50%
+          @media (max-width: 575px)
+            width: 100%
+          span:first-of-type
+            min-width: 103px
+            min-width: 112px
+            @media (max-width: 575px)
+              min-width: 103px
+    .price
+      padding: 21px 10px
+      display: flex
+      flex-direction: column
+      align-items: center
+      @media (max-width: 1368px)
+        flex-direction: column-reverse
+        border: none
+        padding: 0 10px 10px 0
+      .price-money
+        position: static
+        height: auto
+        color: #000
+        @media (max-width: 575px)
+          display: flex
+        .old
+          margin-bottom: 10px
+          color: #FC3333
+          @media (max-width: 1368px)
+            margin: 0
+          @media (max-width: 575px)
+            margin-bottom: 0
+          span
+            color: #B6B6B6
+            @media (max-width: 575px)
+              font-size: 16px
+      button.pay,
+      a.pay
+        position: static
+        border-radius: 10px
+        width: 189px
+        height: 37px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0
+        margin: 18px auto 0
+        @media (max-width: 1368px)
+          display: none
+      .date-of-order-wrapper
+        display: flex
+        align-items: center
+        flex-direction: column
+        @media (max-width: 1368px)
+          flex-direction: row
+          padding: 0 21px 15px
+          font-size: 16px
+        @media (max-width: 575px)
+          padding: 15px 15px 15px
+        @media (max-width: 380px)
+          flex-direction: column
+        .date-of-order-name
+          max-width: 130px
+          color: #8B8B8B
+          margin-bottom: 20px
+          margin-top: 60px
+          @media (max-width: 1368px)
+            max-width: 100%
+            margin: 0 5px 0 0
+          @media (max-width: 575px)
+            //font-size: 13px
+        .date-of-order
+          font-weight: bold
+          font-size: 16px
+          color: #000000
+    .small-pay-button
+      display: none
+      position: static
+      width: auto
+      margin: 5px 21px 15px
+      border-radius: 10px
+      padding: 0.6em 1.2em
+      @media (max-width: 1368px)
+        display: block
+    &.blue-buttons
+      .pay
+        background-color: #40297B
+    &.grey-buttons
+      .pay
+        background-color: #8B8B8B
+  .chat
+    color: #000000
+    &__header
+      padding-left: 20px
+      margin-bottom: 10px
+      @media (max-width: 575px)
+        padding-left: 15px
+        padding-right: 15px
+        //font-size: 13px
+    &__wrapper
+      min-height: 356px
+      background: #C4C4C4
+      border: 1px solid #B6B6B6
+      border-radius: 10px
+      margin-bottom: 100px
+      @media (max-width: 575px)
+        margin-bottom: 50px
