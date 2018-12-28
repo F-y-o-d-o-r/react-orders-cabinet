@@ -1,0 +1,413 @@
+@import ../../sass/_mixins
+.orders
+  min-height: 50vh
+  .sort-order
+    margin: 42px auto 0 auto
+    max-width: 926px
+    border-bottom: 1px solid #C4C4C4
+    @media (max-width: 767px)
+      margin: 20px auto 0 auto
+    ul
+      display: flex
+      justify-content: center
+      text-align: center
+      overflow: auto
+      white-space: nowrap
+      @media (max-width: 582px)
+        justify-content: flex-start
+      li.status-order
+        margin-right: 15px
+        cursor: pointer
+        @media (max-width: 767px)
+          margin-right: 10px
+        &:last-of-type
+          margin-right: 0
+        a
+          @extend .trans
+          color: #8B8B8B
+          font-size: 16px
+          display: block
+          padding-bottom: 6px
+          border-bottom: 2px solid transparent
+          &:hover
+            color: #40297B
+            border-bottom: 2px solid #40297B
+      .active
+        a
+          color: #40297B!important
+          border-bottom: 2px solid #40297B!important
+.verticalCarousel-orders
+  margin-top: 21px
+  margin-bottom: 91px
+  overflow: auto
+  .fa-angle-up,
+  .fa-angle-down
+    color: #5D2D81
+  .vc_goDown
+    margin-top: 15px
+    margin-bottom: 100px
+  .list-orders
+    padding-left: 109px
+    padding-right: 109px
+    max-height: 707px
+    @media (max-width: 1368px)
+      padding-left: 20px
+      padding-right: 20px
+    @media (max-width: 1060px)
+      padding-left: 90px
+      padding-right: 90px
+    @media (max-width: 991px)
+      padding-right: 10px
+      padding-left: 10px
+.list-orders, 
+.order
+  display: flex
+  flex-direction: column
+  li
+    &.order-before-work //- Предложение
+      span.order-color
+        color: #18C783
+      button.order-color
+        background-color: #18C783
+    &.order-waiting //- В обработке
+      span.order-color
+        color: #18C783
+      button.order-color
+        background-color: #18C783
+    &.order-in-work //- В работе
+      span.order-color
+        color: #18C783
+      button.order-color
+        background-color: #18C783
+      .price,
+      .small-screen-price
+        color: #8B8B8B
+    &.order-finished // Завершен
+      span.order-color
+        color: #40297B
+      button.order-color
+        background-color: #40297B
+      .price,
+      .small-screen-price
+        color: #8B8B8B
+    &.order-archive-finished2-1type // Архив и Завершен 2-1
+      span,
+      span.order-color
+        color: #8B8B8B
+      .price,
+      .small-screen-price
+        color: #8B8B8B
+      button.order-color
+        background-color: #40297B
+    &.order-archive-finished2-2type // Архив и Завершен 2-2 - полностью серый
+      span.order-color
+        color: #8B8B8B
+      .price,
+      .small-screen-price
+        color: #8B8B8B
+      button.order-color
+        background-color: #8B8B8B
+    &.order-full-end
+      span
+        color: #8B8B8B!important
+    a
+      min-height: 109px
+      color: #000000
+      border-radius: 10px
+      border: 1px solid #B6B6B6
+      display: flex
+      justify-content: space-between
+      margin: auto
+      margin-bottom: 9px
+      font-size: 17px
+      &:hover
+        border: 1.5px solid #40297B!important
+      @media (max-width: 991px)
+        min-height: 180px
+      @media (max-width: 575px)
+        flex-direction: column
+        min-height: auto
+      &:hover .pay
+        top: calc(100% - 44.5px)
+        right: 0.5px
+        @media (max-width: 575px)
+          width: calc(100% - .5px)
+          margin-bottom: .5px
+  .status-order
+    margin: 0
+    span
+      display: inline-block!important
+      &:first-child
+        padding-right: 12px
+  .desc
+    padding: 15px 21px 0
+    flex-grow: 1
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-size: 16px
+    @media (max-width: 1060px)
+      flex-direction: column
+    // @media (max-width: 767px)
+    //   font-size: 13px
+    @media (max-width: 575px)
+      padding: 15px
+    &__order-status,
+    &__order-details,
+    &__order-discount
+      div
+        margin-bottom: 10px
+      @media (max-width: 1060px)
+        flex-grow: 1
+    &__order-status,
+    &__order-details
+      div
+        display: flex
+        span:first-child
+          font-weight: bold
+    &__order-status
+      width: 140px
+      @media (max-width: 1060px)
+        display: flex
+        justify-content: space-between
+        width: 80%
+      @media (max-width: 991px)
+        width: 100%
+      @media (max-width: 600px)
+        flex-direction: column
+        position: relative
+      div
+        span:first-child
+          min-width: 55px
+          @media (max-width: 600px)
+            min-width: 90px
+            padding-right: 5px
+      // .order-before-work //- Предложение
+      //   color: #18C783
+      // .order-waiting //- В обработке
+      //   color: #18C783 
+      // .order-in-work //- В работе
+      //   color: #18C783
+      // .order-finished // Завершен
+      //   color: #40297B
+      // .order-archive-finished // Архив и Завершен 2
+      //   color: #8B8B8B
+    &__order-details
+      flex-grow: 1
+      margin-left: 21px
+      margin-right: 21px
+      @media (max-width: 1060px)
+        width: 80%
+        margin-left: 0
+        margin-right: 0
+      @media (max-width: 991px)
+        width: 100%
+      div
+        span:first-child
+          min-width: 90px
+          padding-right: 5px
+        span:last-child
+      .small-screen-price
+        display: none
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        margin-top: 15px
+        margin-bottom: 0
+        @media (max-width: 575px)
+          display: flex
+        .price-money
+          justify-content: center
+          align-items: center
+          margin: 0
+          display: flex
+          .old
+            color: red;
+            text-decoration: line-through
+            margin-bottom: 5px
+            display: inline-block
+            span
+              min-width: auto
+              color: #9c9c9c
+              font-size: 16px
+              padding: 0
+          .new
+            font-size: 30px
+            font-weight: 700
+            margin: 0
+            display: inline-block
+            margin-left: 5px
+            span
+              min-width: auto
+              font-weight: normal
+              font-size: 16px
+        .desc__order-discount-size
+          color: #B6B6B6
+          display: none
+          align-items: center
+          justify-content: flex-end
+          margin: 0
+          flex-grow: 1
+          span
+            font-size: 13px
+            font-weight: normal
+          @media (max-width: 575px)
+            display: flex
+          .desc__order-discount-size-indent
+            display: inline-block
+            margin-right: 6px
+            min-width: auto
+          .desc__order-discount-sign
+            display: inline-block
+            margin-left: 9px
+            height: 12px
+            width: 12px
+            background-color: #f6f6f6
+            border-radius: 50%
+            font-size: 9px
+            display: flex
+            align-items: center
+            justify-content: center
+    &__order-discount
+      width: 135px
+      @media (max-width: 1060px)
+        width: 80%
+      @media (max-width: 991px)
+        width: 100%
+      div
+        text-align: center
+        @media (max-width: 1060px)
+          text-align: left
+        @media (max-width: 575px)
+          text-align: center
+      .desc__order-discount-size
+        color: #B6B6B6
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-left: 25px
+        @media (max-width: 1060px)
+          justify-content: flex-start
+          margin-left: 0
+        @media (max-width: 575px)
+          display: none
+        .desc__order-discount-size-indent
+          display: inline-block
+          margin-right: 6px
+        .desc__order-discount-sign
+          display: inline-block
+          margin-left: 9px
+          height: 12px
+          width: 12px
+          background-color: #f6f6f6
+          border-radius: 50%
+          font-size: 9px
+          display: flex
+          align-items: center
+          justify-content: center
+  .desc__order-discount-message
+    color: #FC3232
+    font-size: 14px
+    span:first-child
+      color: #ffffff
+      margin-right: 8px
+      background-color: #FC3232
+      width: 20px
+      height: 20px
+      min-width: 20px!important
+      display: inline-block
+      border-radius: 50%
+      line-height: 21px
+      font-weight: bold
+      text-align: center
+  .desc__order-discount-message-big
+    @media (max-width: 1060px)
+      display: none
+  .desc__order-discount-message-small
+    display: none!important
+    @media (max-width: 1060px)
+      min-width: 20px
+      display: flex!important
+      @media (max-width: 600px)
+        position: absolute
+        right: 0
+        top: 0
+    span
+      margin-right: 0!important
+      padding-right: 0!important
+  .price
+    min-width: 210px
+    position: relative
+    border-left: 1px solid #B5B5B5
+    @media (max-width: 575px)
+      border-left: none
+    & > *
+      width: 100%
+      text-align: center
+    .price-money
+      position: absolute
+      top: 0
+      height: calc(100% - 44px)
+      display: flex
+      flex-direction: column
+      justify-content: center
+      @media (max-width: 575px)
+        display: none
+      .old
+        color: red;
+        text-decoration: line-through
+        margin-bottom: 5px
+        span
+          color: #9c9c9c
+          font-size: 16px
+          @media (max-width: 575px)
+            font-size: 12px
+      .new
+        font-size: 24px
+        font-weight: 700
+        span
+          font-weight: normal
+          font-size: 16px
+  .pay
+    z-index: 1
+    background-color: $new-main-green
+    display: block
+    width: 100%
+    line-height: 25px
+    text-align: center
+    border-radius: 0 0 9px
+    color: white
+    position: absolute
+    font-size: 16px
+    top: calc(100% - 44px)
+    // min-height: 20px
+    // padding: 0.6em 1.2em
+    // display: block!important
+    @media (max-width: 575px)
+      position: static
+      border-radius: 0 0 9px 9px
+      font-size: 14px
+  // .archive-finished
+  //   background-color: #8B8B8B
+  // .leave-a-review
+  //   background-color: #40297B
+.ui-tooltip.slider-price
+  border: 1px solid #291954!important
+  border-radius: 10px
+  min-width: auto
+  background: linear-gradient(to top right, #40297B 0%, #5D2D81 100%)
+  color: #ffffff
+  @media (max-width: 419px)
+    min-width: auto
+    width: auto
+  @media (max-width: 400px)
+    min-width: auto
+    width: auto
+  @media (max-width: 370px)
+    min-width: auto
+    width: auto
+  @media (max-width: 330px)
+    min-width: auto
+    width: auto
+  .ui-tooltip-content
+    width: 100%

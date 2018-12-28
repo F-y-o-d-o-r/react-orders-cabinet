@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Route, Link } from 'react-router-dom';
 /*eslint-enable */
 import './orders.sass';
+import MainOrders from './main';
 
 export default class Orders extends Component {
   render() {
@@ -27,7 +28,7 @@ export default class Orders extends Component {
             </li>
           </ul>
         </nav>
-        <h1>orders</h1>
+        <MainOrders />
       </div>
     );
   }
