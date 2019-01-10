@@ -127,7 +127,7 @@ function HeaderSmallMenu(props) {
         <div className="cabinet-profile-exit__menu">
           <ul>
             <li>
-              <a href="#!">Мой профиль</a>
+              <a href="/profile">Мой профиль</a>
             </li>
             <li>
               <a className="exit" href="#!">
