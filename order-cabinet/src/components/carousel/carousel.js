@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import * as $ from 'jquery';
-import OwlCarousel from 'react-owl-carousel';
+// import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './carousel.sass';
@@ -9,7 +9,7 @@ export default class Carousel extends Component {
   render() {
     return (
       <section className="slider">
-        <OwlCarousel className="owl-theme" loop margin={0} items="1">
+        {/* <OwlCarousel className="owl-theme" loop margin={0} items="1">
           <div className="item">
             <div className="container">
               <img src="https://picsum.photos/200/300/?random" alt="lorem" />
@@ -39,7 +39,7 @@ export default class Carousel extends Component {
               </div>
             </div>
           </div>
-        </OwlCarousel>
+        </OwlCarousel> */}
       </section>
     );
   }
